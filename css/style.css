@@ -324,13 +324,18 @@ a {
     line-height: 100%;
 }
 
-.tel-number {
-    background-image: url("images/phone.jpg");
+.tel{
+    background-image: url("../images/phone.jpg");
     background-repeat: no-repeat;
+   
 }
 
 .locat {
-    background-image: url("images/location_on.jpg");
+    background-image: url(../images/location_on.jpg);
+    background-repeat: no-repeat;
+}
+.mail{
+    background-image: url(../images/mail.jpg);
     background-repeat: no-repeat;
 }
 
@@ -393,4 +398,43 @@ ul {
 }
 .clients-caption{
     margin-left: 220px;
+}
+.contacts-cards-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contacts-caption{
+    padding: 19px 0 30px 0px;
+    color: #1C1C1C;
+    font-size: 17px;
+    font-weight: 600;
+    left: 180%;
+}
+.telephone , .mail-addres , .location-lionic{
+    display: block;
+    color: #787878;
+    font-size: 14px;
+    font-weight:400;
+    line-height: 180%;
+}
+.contacts-caption1{
+    margin-left: 272px;
+    font-size: 36px;
+    line-height: 130%;
+    font-weight: 300;
+    color: #1C1C1C;
+    margin-bottom: 109px;
+
+}
+.mail{
+    width: 170px;
+    height: 159px;
+}
+.tel{
+    width:121px;
+    height:159px ;
+}
+.locat{
+    width: 214px;
+    height: 159px;
 }
