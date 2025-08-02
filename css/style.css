@@ -1,49 +1,48 @@
 @font-face {
     font-family: "Open Sans";
-    src: local("Open Sans") url(../font/OpenSans_Condensed-SemiBold.woff2) format(woff2),
-        url(../font/OpenSans_Condensed-SemiBold.woff) format(woff);
+    src: local("Open Sans") url(../font/OpenSans-SemiBold.woff2) format(woff2),
+        url(../font/OpenSans-SemiBold.woff) format(woff);
     font-weight: 600;
 }
 
 @font-face {
     font-family: "Open Sans";
-    src: local("Open Sans") url(../font/OpenSans_Condensed-Regular.woff2) format(woff, 2) url(../font/OpenSans_Condensed-Regular.woff) format(woff);
+    src: local("Open Sans") url(../font/OpenSans-Regular.woff2) format(woff, 2) url(../font/OpenSans-Regular.woff) format(woff);
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Open Sans";
-    src: local("Open Sans") url(../font/OpenSans_Condensed-Light.woff2) format(woff2),
-        url(../font/OpenSans_Condensed-Light.woff) format(woff);
+    src: local("Open Sans") url(../font/OpenSans-Light.woff2) format(woff2),
+        url(../font/OpenSans-Light.woff) format(woff);
     font-weight: 300;
 }
 
-body{
+body {
+    h2 {
+        color: var(--captipn-color);
+    }
+
     font-family: "Open Sans";
     margin: 30px auto;
-     max-width: 1170px;
-  
+    max-width: 1170px;
+
+
 }
 
 
-main{
+main {
     border-top: 1px solid #DADADA;
-   
+
 }
 
 :root {
     --primary-color: #3172B9;
-
-
+    --captipn-color: #1C1C1C
 }
 
+/*
 .href-list {
-    background-color: rgb(255, 255, 255);
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.a-list {
     justify-content: space-evenly;
     align-items: center;
     align-content: flex-start;
@@ -51,15 +50,46 @@ main{
     list-style-type: none;
     text-decoration: none;
     margin: 30px auto;
-   
 
+}
+    */
+.a-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 52px
 }
 
 .header-a {
     font-size: 15px;
     font-weight: 600;
     line-height: 100%;
+    color: #1C1C1C;
 }
+
+.header-a:hover {
+    outline: 1px solid #71A7E2;
+
+}
+
+.header-a:focus-visible {
+    color: #71A7E2;
+}
+
+.header-a:active {
+    color: #3172B9;
+    text-decoration: underline #3474BA;
+
+}
+
+.a-list2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 52px
+}
+
+
 
 .a-button {
     justify-content: space-evenly;
@@ -85,10 +115,18 @@ main{
     font-size: 40px;
     font-weight: 300;
     line-height: 130%;
-    margin-right: 826px;
+    max-width: 529px;
     margin-top: 113px;
 
 }
+
+.home-span-ssl {
+    font-size: 11px;
+    color: #787878;
+    line-height: 155%;
+    font-weight: 400;
+}
+
 
 .home-text {
     flex-direction: column;
@@ -119,13 +157,14 @@ main{
     font-weight: 300;
     line-height: 130%;
     margin-right: 826px;
-    color: #1C1C1C;
-
+    color: var(--captipn-color)
 }
 
 .home-span {
-    display: block;
     margin-top: 28px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
 
 }
 
@@ -133,6 +172,8 @@ main{
     font-weight: 300;
     font-size: 16px;
     line-height: 155%;
+    color: #787878;
+    max-width: 471px;
 }
 
 .image-logo {
@@ -146,6 +187,7 @@ main{
 #home {
     background-image: url(../images/first-bg\ 1.svg);
     background-repeat: no-repeat;
+    background-size: cover;
     height: 550px;
 
 }
@@ -153,9 +195,7 @@ main{
 /*services*/
 
 
-#services {
-   
-}
+#services {}
 
 .sevices-cards-list {
     display: flex;
@@ -182,6 +222,25 @@ main{
 
 }
 
+.services-card-svg-1-2 {
+    margin-top: 61px;
+    margin-left: 90px;
+}
+
+.services-card-p {
+    text-align: center;
+}
+
+.services-card-caption-long {
+    text-align: center;
+    width: 201px;
+    display: flex;
+    justify-content: center;
+    color: #1C1C1C;
+}
+
+
+
 .services-caption {
     display: flex;
     font-size: 40px;
@@ -202,6 +261,7 @@ main{
     font-size: 16px;
     line-height: 100%;
     text-align: center;
+    color: #787878;
 
 }
 
@@ -270,10 +330,10 @@ main{
     display: flex;
     flex-wrap: wrap;
 }
-    
+
 
 .articles-caption {
-   /*margin-left: 185px;*/
+    /*margin-left: 185px;*/
     padding: 0;
     margin-bottom: 42px;
 
@@ -285,7 +345,7 @@ main{
     border-radius: 5px;
     display: inline-block;
     border: 1px solid #E4E4E4;
-   /* margin-bottom: 30px;*/
+    /* margin-bottom: 30px;*/
     height: 180px;
     width: 570px;
 }
@@ -322,67 +382,91 @@ main{
     display: inline-block;
     height: 180px;
     width: 570px;
-    transition: 0.2s ease;
     margin-left: 26px;
 }
 
-.inner1:hover {
+.inner1:hover,
+.inner1:hover h2,
+.inner1:hover p {
     background-color: var(--primary-color);
     color: #FFFFFF;
 }
 
-.inner1:focus-visible {
+.inner1:focus-visible,
+.inner1:focus-visible h2,
+.inner1:focus-visible p {
     background-color: #71A7E2;
     color: #FFFFFF;
-
 }
 
-.inner1:active {
+.inner1:active,
+.inner1:active h2,
+.inner1:active p {
     background-color: #0E3B6C;
     color: #FFFFFF;
 }
 
-.inner2:hover {
+.inner2:hover,
+.inner2:hover h2,
+.inner2:hover p {
     background-color: var(--primary-color);
     color: #FFFFFF;
 }
 
-.inner2:focus-visible {
+.inner2:focus-visible,
+.inner2:focus-visible h2,
+.inner2:focus-visible p {
     background-color: #71A7E2;
     color: #FFFFFF;
 }
 
-.inner2:active {
+.inner2:active,
+.inner2:active h2,
+.inner2:active p {
     background-color: #0E3B6C;
     color: #FFFFFF;
 }
 
-.inner3:hover {
+.inner3:hover,
+.inner3:hover h2,
+.inner3:hover p {
     background-color: var(--primary-color);
     color: #FFFFFF;
+
 }
 
-.inner3:focus-visible {
+.inner3:focus-visible,
+.inner3:focus-visible h2,
+.inner3:focus-visible p {
     background-color: #71A7E2;
     color: #FFFFFF;
 }
 
-.inner3:active {
+.inner3:active,
+.inner3:active h2,
+.inner3:active p {
+
     background-color: #0E3B6C;
     color: #FFFFFF;
 }
 
-.inner4:hover {
+.inner4:hover,
+.inner4:hover h2,
+.inner4:hover p {
     background-color: var(--primary-color);
     color: #FFFFFF;
 }
 
-.inner4:focus-visible {
+.inner4:focus-visible,
+.inner4:focus-visible h2,
+.inner4:focus-visible p {
     background-color: #71A7E2;
     color: #FFFFFF;
 }
 
-.inner4:active {
+.inner4:active,
+.inner4:active h2,
+.inner4:active p {
     background-color: #0E3B6C;
     color: #FFFFFF;
 }
@@ -393,9 +477,27 @@ main{
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-    margin-right: 160px;
+    color: #787878;
+    display: flex;
+    flex-direction: column;
+    margin-top: 23px;
+
+    h2 {
+        margin: 0 0 15px;
+    }
+
+    p {
+        margin: 0;
+        max-width: 210px;
+
+    }
 
 }
+
+.articles-text-data {
+    font-size: 10px;
+}
+
 
 .inner {
     font-size: 20px;
@@ -530,6 +632,20 @@ ul {
     line-height: 180%;
 }
 
+.telephone:hover {
+    color: #71A7E2;
+}
+
+.telephone:focus-visible {
+    outline: 1px solid #71A7E2;
+
+}
+
+.telephone:active {
+    color: #0E3B6C;
+}
+
+
 .contacts-caption1 {
     margin-left: 183px;
     font-size: 36px;
@@ -595,6 +711,23 @@ footer {
     align-items: center;
 }
 
+.tviter-icon:hover {
+    outline: 1px solid #71A7E2;
+}
+
+.in-icon:hover {
+    path {
+        fill: #71A7E2;
+    }
+}
+
+.envelope-icon:hover {
+    path {
+        stroke: #3172B9;
+    }
+
+}
+
 .join-us-text {
     font-weight: 400;
     font-size: 16px;
@@ -623,6 +756,15 @@ footer {
 
 }
 
+#name,
+#email,
+#tel,
+#country:hover {
+    border: 1px solid #71A7E2
+}
+
+
+
 #com {
     border: 1px solid #DADADA;
     border-radius: 20px;
@@ -639,13 +781,27 @@ footer {
     color: white;
 }
 
+.get-started-user {
+    font-weight: 400;
+    color: #3172B9;
+    font-size: 12px;
+    text-decoration: underline;
+
+}
+
+.join-us-chekbox-p {
+    font-weight: 400;
+    color: #787878;
+    font-size: 12px;
+}
+
 .join-us-form {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-  
+
 }
 
 .data-list {
@@ -659,4 +815,13 @@ footer {
 .join-us-chekbox-text {
     display: flex;
     gap: 8px;
+}
+
+.join-us-get-started-button{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 39px;
+    margin-top: 19px;
+
 }
