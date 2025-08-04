@@ -152,6 +152,45 @@ main {
     width: 134px;
 }
 
+.a-free-buttun:hover {
+    outline-offset: 3px;
+    outline: 1px solid #71A7E2;
+
+}
+
+.a-free-buttun:focus-visible {
+    background-color: #71A7E2;
+}
+
+.a-button:hover {
+    outline-offset: 3px;
+    outline: 1px solid #71A7E2;
+
+}
+
+.a-button:focus-visible {
+    background-color: #71A7E2;
+}
+
+.a-button:active {
+    background-color: #0E3B6C;
+}
+
+.a-free-buttun:active {
+    background-color: #0E3B6C;
+
+}
+
+
+.a-free-buttun:disabled {
+    background-color: #C4C4C4;
+}
+
+
+
+
+
+
 .section-caption {
     font-size: 36px;
     font-weight: 300;
@@ -189,6 +228,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
+    background-position: right;
 
 }
 
@@ -570,9 +610,10 @@ ul {
     border-radius: 5px;
 
 }
-#clients{
+
+#clients {
     padding-bottom: 160px;
-     border-bottom: 1px solid #DADADA;
+    border-bottom: 1px solid #DADADA;
 }
 
 .clients-card-info {
@@ -611,7 +652,7 @@ ul {
     color: #787878;
 }
 
-#contacts{
+#contacts {
     height: 480px;
     border-bottom: 1px solid #DADADA
 }
@@ -748,7 +789,7 @@ footer {
 
 }
 
-#join-us{
+#join-us {
     padding-top: 87px;
     padding-bottom: 122px;
 }
@@ -789,20 +830,20 @@ footer {
     border: 1px solid #71A7E2
 }
 
-#country{
+#country {
     appearance: none;
-    background-image:url(../images/down.svg);
+    background-image: url(../images/down.svg);
     background-repeat: no-repeat;
     width: 236px;
     background-position: right 28px center;
 }
 
 
-#country:focus-visible{
+#country:focus-visible {
     appearance: none;
-    background-image:url(../images/up.svg);
+    background-image: url(../images/up.svg);
     background-repeat: no-repeat;
-    background-position: right 28px center;    
+    background-position: right 28px center;
 }
 
 
@@ -812,7 +853,7 @@ footer {
     border-radius: 20px;
     padding: 15px 28px 95px;
     width: 520px;
-    
+
 }
 
 .join-get {
@@ -859,7 +900,7 @@ footer {
     gap: 8px;
 }
 
-.join-us-get-started-button{
+.join-us-get-started-button {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
