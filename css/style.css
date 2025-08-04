@@ -195,7 +195,11 @@ main {
 /*services*/
 
 
-#services {}
+#services {
+    padding-bottom: 160px;
+    border-bottom: 1px solid #DADADA;
+    padding-top: 87px;
+}
 
 .sevices-cards-list {
     display: flex;
@@ -262,6 +266,7 @@ main {
     line-height: 100%;
     text-align: center;
     color: #787878;
+    margin-bottom: 54px;
 
 }
 
@@ -323,6 +328,7 @@ main {
 
 #articles {
     border-bottom: 1px solid #DADADA;
+    padding-bottom: 160px;
 }
 
 .card-list {
@@ -333,7 +339,7 @@ main {
 
 
 .articles-caption {
-    /*margin-left: 185px;*/
+    margin-top: 87px;
     padding: 0;
     margin-bottom: 42px;
 
@@ -564,6 +570,10 @@ ul {
     border-radius: 5px;
 
 }
+#clients{
+    padding-bottom: 160px;
+     border-bottom: 1px solid #DADADA;
+}
 
 .clients-card-info {
     display: flex;
@@ -601,17 +611,26 @@ ul {
     color: #787878;
 }
 
+#contacts{
+    height: 480px;
+    border-bottom: 1px solid #DADADA
+}
+
 .clients-foto {
     margin: 28px 17px 32px 42px;
 }
 
 .clients-caption {
     margin-left: 35px;
+    padding-top: 87px;
+    padding-bottom: 42px;
+    margin-bottom: 0;
 }
 
 .contacts-cards-list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+
 }
 
 .contacts-caption {
@@ -647,12 +666,13 @@ ul {
 
 
 .contacts-caption1 {
-    margin-left: 183px;
+    margin-left: 35px;
     font-size: 36px;
     line-height: 130%;
     font-weight: 300;
     color: #1C1C1C;
     margin-bottom: 109px;
+    margin-top: 87px;
 
 }
 
@@ -728,12 +748,18 @@ footer {
 
 }
 
+#join-us{
+    padding-top: 87px;
+    padding-bottom: 122px;
+}
+
 .join-us-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
     text-align: center;
     color: #787878;
+    padding-bottom: 30px;
 
 }
 
@@ -763,14 +789,30 @@ footer {
     border: 1px solid #71A7E2
 }
 
+#country{
+    appearance: none;
+    background-image:url(../images/down.svg);
+    background-repeat: no-repeat;
+    width: 236px;
+    background-position: right 28px center;
+}
+
+
+#country:focus-visible{
+    appearance: none;
+    background-image:url(../images/up.svg);
+    background-repeat: no-repeat;
+    background-position: right 28px center;    
+}
+
 
 
 #com {
     border: 1px solid #DADADA;
     border-radius: 20px;
-    /*padding: 15px 28px 95px;*/
+    padding: 15px 28px 95px;
     width: 520px;
-    height: 139px;
+    
 }
 
 .join-get {
