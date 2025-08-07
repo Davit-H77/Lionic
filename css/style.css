@@ -25,10 +25,23 @@ body {
 
     font-family: "Open Sans";
     margin: 30px auto;
-    max-width: 1170px;
+   /* max-width: 1170px;*/
 
 
 }
+
+.menu,
+#services ,
+#articles,
+#contacts ,
+#clients ,
+#join-us ,
+footer{
+    max-width: 1170px;
+    margin: 30px auto;
+
+}
+
 
 
 main {
@@ -65,17 +78,23 @@ main {
     font-weight: 600;
     line-height: 100%;
     color: #1C1C1C;
+    transition: 0.2s ease;
 }
 
+
+.footer-a:hover ,
 .header-a:hover {
-    outline: 1px solid #71A7E2;
+     color: #71A7E2;
 
 }
 
+.footer-a:focus-visible ,
 .header-a:focus-visible {
-    color: #71A7E2;
+     outline: 1px solid #71A7E2;
+   
 }
 
+.footer-a:active ,
 .header-a:active {
     color: #3172B9;
     text-decoration: underline #3474BA;
@@ -108,7 +127,7 @@ main {
 }
 
 #home {
-    max-width: none;
+    margin-left: 185px;
 }
 
 .home-caption {
@@ -153,23 +172,25 @@ main {
 }
 
 .a-free-buttun:hover {
-    outline-offset: 3px;
-    outline: 1px solid #71A7E2;
+    background-color: #71A7E2;
 
 }
 
 .a-free-buttun:focus-visible {
-    background-color: #71A7E2;
+     outline-offset: 3px;
+    outline: 1px solid #71A7E2;
 }
 
 .a-button:hover {
-    outline-offset: 3px;
-    outline: 1px solid #71A7E2;
+    background-color: #71A7E2;
+
 
 }
 
 .a-button:focus-visible {
-    background-color: #71A7E2;
+    outline-offset: 3px;
+    outline: 1px solid #71A7E2;
+
 }
 
 .a-button:active {
@@ -692,15 +713,19 @@ ul {
     line-height: 180%;
 }
 
+
+.mail-addres:hover ,
 .telephone:hover {
     color: #71A7E2;
 }
 
+.mail-addres:focus-visible ,
 .telephone:focus-visible {
     outline: 1px solid #71A7E2;
 
 }
 
+.mail-addres:active ,
 .telephone:active {
     color: #0E3B6C;
 }
@@ -773,7 +798,8 @@ footer {
 }
 
 .tviter-icon:hover {
-    outline: 1px solid #71A7E2;
+    outline: 2px solid #71A7E2;
+    outline-offset: 5px;
 }
 
 .in-icon:hover {
