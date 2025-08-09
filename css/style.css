@@ -25,21 +25,26 @@ body {
 
     font-family: "Open Sans";
     margin: 30px auto;
-   /* max-width: 1170px;*/
+    /* max-width: 1170px;*/
 
 
 }
 
 .menu,
-#services ,
+#services,
 #articles,
-#contacts ,
-#clients ,
-#join-us ,
-footer{
+#contacts,
+#clients,
+#join-us,
+footer {
     max-width: 1170px;
     margin: 30px auto;
 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 
@@ -82,19 +87,19 @@ main {
 }
 
 
-.footer-a:hover ,
+.footer-a:hover,
 .header-a:hover {
-     color: #71A7E2;
+    color: #71A7E2;
 
 }
 
-.footer-a:focus-visible ,
+.footer-a:focus-visible,
 .header-a:focus-visible {
-     outline: 1px solid #71A7E2;
-   
+    outline: 1px solid #71A7E2;
+
 }
 
-.footer-a:active ,
+.footer-a:active,
 .header-a:active {
     color: #3172B9;
     text-decoration: underline #3474BA;
@@ -126,9 +131,7 @@ main {
 
 }
 
-#home {
-    margin-left: 185px;
-}
+  
 
 .home-caption {
     font-size: 40px;
@@ -136,6 +139,7 @@ main {
     line-height: 130%;
     max-width: 529px;
     margin-top: 113px;
+    margin-bottom: 26px;
 
 }
 
@@ -151,6 +155,8 @@ main {
     flex-direction: column;
     align-items: flex-start;
     display: flex;
+    margin-left: 176px;
+   
 }
 
 
@@ -177,7 +183,7 @@ main {
 }
 
 .a-free-buttun:focus-visible {
-     outline-offset: 3px;
+    outline-offset: 3px;
     outline: 1px solid #71A7E2;
 }
 
@@ -225,6 +231,8 @@ main {
     display: flex;
     align-items: center;
     gap: 13px;
+    width: 205px;
+    justify-content: center;
 
 }
 
@@ -234,6 +242,7 @@ main {
     line-height: 155%;
     color: #787878;
     max-width: 471px;
+    margin: 0 0 34px 0;
 }
 
 .image-logo {
@@ -249,7 +258,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
-    background-position: right;
+    
 
 }
 
@@ -683,7 +692,7 @@ ul {
 }
 
 .clients-caption {
-    margin-left: 35px;
+
     padding-top: 87px;
     padding-bottom: 42px;
     margin-bottom: 0;
@@ -714,25 +723,25 @@ ul {
 }
 
 
-.mail-addres:hover ,
+.mail-addres:hover,
 .telephone:hover {
     color: #71A7E2;
 }
 
-.mail-addres:focus-visible ,
+.mail-addres:focus-visible,
 .telephone:focus-visible {
     outline: 1px solid #71A7E2;
 
 }
 
-.mail-addres:active ,
+.mail-addres:active,
 .telephone:active {
     color: #0E3B6C;
 }
 
 
 .contacts-caption1 {
-    margin-left: 35px;
+
     font-size: 36px;
     line-height: 130%;
     font-weight: 300;
@@ -797,22 +806,48 @@ footer {
     align-items: center;
 }
 
-.tviter-icon:hover {
+.envelope-icon:focus-visible ,
+.in-icon:focus-visible ,
+.tviter-icon:focus-visible {
     outline: 2px solid #71A7E2;
     outline-offset: 5px;
 }
 
+
+.envelope-icon:focus ,
+.in-icon:focus ,
+.tviter-icon:focus{
+    outline: none;
+
+}
+
+
+.tviter-icon:hover,
 .in-icon:hover {
     path {
         fill: #71A7E2;
     }
 }
 
-.envelope-icon:hover {
+.tviter-icon:active,
+.in-icon:active{
+     path {
+    fill: #3172B9;
+     }
+}
+
+.envelope-icon:active {
     path {
         stroke: #3172B9;
     }
+}
 
+.envelope-icon:hover {
+
+
+    path {
+        stroke: #71A7E2;
+    }
 }
 
 #join-us {
@@ -849,14 +884,16 @@ footer {
 
 }
 
-#name,
-#email,
-#tel,
+
+#com:hover,
+#name:hover,
+#email:hover,
+#tel:hover,
 #country:hover {
     border: 1px solid #71A7E2
 }
 
-#country {
+#country{
     appearance: none;
     background-image: url(../images/down.svg);
     background-repeat: no-repeat;
@@ -864,12 +901,22 @@ footer {
     background-position: right 28px center;
 }
 
+#com:active,
+#name:active,
+#email:active,
+#tel:active  ,
+#country:active{
+    border: 1px solid #0E3B6C;
 
-#country:focus-visible {
-    appearance: none;
-    background-image: url(../images/up.svg);
-    background-repeat: no-repeat;
-    background-position: right 28px center;
+}
+
+#com:focus-visible ,
+#name:focus-visible,
+#email:focus-visible,
+#tel:focus-visible,
+#country:focus-visible{
+    border: 1px solid rgba(113, 167, 226, 1);
+    background-color: rgba(113, 167, 226, 0.2);
 }
 
 
@@ -888,6 +935,8 @@ footer {
     padding: 15px 35px;
     background-color: #3172B9;
     color: white;
+    width:230px ;
+    height: 60px;
 }
 
 .get-started-user {
@@ -924,6 +973,7 @@ footer {
 .join-us-chekbox-text {
     display: flex;
     gap: 8px;
+    width: 201px;
 }
 
 .join-us-get-started-button {
@@ -934,3 +984,50 @@ footer {
     margin-top: 19px;
 
 }
+
+
+.mobile-nav-list{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 7px;
+}
+
+.burger-button{
+    border: 0;
+    background-color: #fff;
+    padding:0;
+}
+
+
+
+
+
+
+@media(max-width:360px){
+    .a-list2{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        gap: 41px;
+    }
+
+    .a-button{
+        width:120px ;
+        height: 40px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+
+}
+
+@media(min-width:360px){
+    .mobile-nav-list{
+        display: none;
+    }
+}
+    
