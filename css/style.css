@@ -102,7 +102,9 @@ main {
 .footer-a:active,
 .header-a:active {
     color: #3172B9;
-    text-decoration: underline #3474BA;
+    border-bottom: 2px solid #3172B9;
+
+
 
 }
 
@@ -131,7 +133,7 @@ main {
 
 }
 
-  
+
 
 .home-caption {
     font-size: 40px;
@@ -155,8 +157,8 @@ main {
     flex-direction: column;
     align-items: flex-start;
     display: flex;
-    margin-left: 176px;
-   
+    width: 1170px;
+
 }
 
 
@@ -179,7 +181,7 @@ main {
 
 .a-free-buttun:hover {
     background-color: #71A7E2;
-     border:1px solid;
+    border: 1px solid;
 
 }
 
@@ -190,7 +192,7 @@ main {
 
 .a-button:hover {
     background-color: #71A7E2;
-    border:1px solid;
+    border: 1px solid;
 
 
 }
@@ -260,7 +262,10 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
 }
 
@@ -603,7 +608,7 @@ a {
 }
 
 .home-a {
-    text-decoration: underline;
+    border-bottom: 2px solid #3172B9;
     color: #3172B9;
     font-size: 15px;
     font-weight: 600;
@@ -808,20 +813,31 @@ footer {
     align-items: center;
 }
 
-.envelope-icon:focus-visible ,
-.in-icon:focus-visible ,
+.envelope-icon:focus-visible,
+.in-icon:focus-visible,
 .tviter-icon:focus-visible {
     outline: 2px solid #71A7E2;
     outline-offset: 5px;
 }
 
+.envelope-icon:focus-visible {
+    outline: 2px solid #71A7E2;
+    outline-offset: 5px;
 
-.envelope-icon:focus ,
-.in-icon:focus ,
+}
 .tviter-icon:focus{
     outline: none;
 
 }
+.in-icon:focus{
+    outline: none;
+}
+
+.envelope-icon:focus{
+    outline: none;
+}
+
+
 
 
 .tviter-icon:hover,
@@ -832,10 +848,10 @@ footer {
 }
 
 .tviter-icon:active,
-.in-icon:active{
-     path {
-    fill: #3172B9;
-     }
+.in-icon:active {
+    path {
+        fill: #3172B9;
+    }
 }
 
 .envelope-icon:active {
@@ -895,7 +911,7 @@ footer {
     border: 1px solid #71A7E2
 }
 
-#country{
+#country {
     appearance: none;
     background-image: url(../images/down.svg);
     background-repeat: no-repeat;
@@ -906,20 +922,27 @@ footer {
 #com:active,
 #name:active,
 #email:active,
-#tel:active  ,
-#country:active{
+#tel:active,
+#country:active {
     border: 1px solid #0E3B6C;
 
 }
 
-#com:focus-visible ,
+#com:focus-visible,
 #name:focus-visible,
 #email:focus-visible,
 #tel:focus-visible,
-#country:focus-visible{
+#country:focus-visible {
     border: 1px solid rgba(113, 167, 226, 1);
     background-color: rgba(113, 167, 226, 0.2);
 }
+
+#country:focus{
+    background-image:url(../images/up.svg);
+}
+
+
+
 
 
 
@@ -937,8 +960,15 @@ footer {
     padding: 15px 35px;
     background-color: #3172B9;
     color: white;
-    width:230px ;
+    width: 230px;
     height: 60px;
+
+}
+
+
+.join-get:focus-visible {
+    outline-offset: 5px;
+    outline: 1px solid #3172B9
 }
 
 .get-started-user {
@@ -967,8 +997,9 @@ footer {
 .data-list {
     display: flex;
     flex-wrap: wrap;
-    width: calc((100% - 30px) / 2);
     gap: 19px;
+    width: 520px;
+    height: 120px;
 
 }
 
@@ -988,17 +1019,17 @@ footer {
 }
 
 
-.mobile-nav-list{
+.mobile-nav-list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 7px;
 }
 
-.burger-button{
+.burger-button {
     border: 0;
     background-color: #fff;
-    padding:0;
+    padding: 0;
 }
 
 
@@ -1006,18 +1037,23 @@ footer {
 
 
 
-@media(max-width:360px){
-    .a-list2{
+@media(max-width:420px) {
+    .a-list2 {
         display: none;
     }
-
-    .menu{
-        display: flex;
-        gap: 41px;
+    .main{
+        max-width: 400px;
+        margin: 0 auto;
     }
 
-    .a-button{
-        width:120px ;
+    .menu {
+        display: flex;
+        gap: 41px;
+        justify-content: center;
+    }
+
+    .a-button {
+        width: 120px;
         height: 40px;
         padding: 0;
         display: flex;
@@ -1025,12 +1061,99 @@ footer {
         padding: 0;
     }
 
+    .home-text {
+        width: 290px;
+    }
+
+    .sevices-cards-list {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .servic-card {
+        width: 133px;
+        height: 222px
+    }
+
+    .services-card-text {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .services-card-svg-1-2 {
+        width: 42px;
+        height: 42px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin: 15px auto;
+    }
+
+    .services-card-svg-1 {
+        width: 42px;
+        height: 42px;
+        margin: 0 auto;
+        display: flex;
+        justify-content:center ;
+           margin: 15px auto;
+    }
+    .services-card-caption{
+        font-size: 16px;
+        margin: 0;
+    }
+    .services-card-p{
+        margin: 3px 0 0 0;
+    }
+
+    .services-card-caption-long{
+        font-size: 16px;
+        width: 80px;
+        margin:0 auto;
+    }
+    .services-caption{
+        justify-content:flex-start;
+    }
+    .services-p{
+        width: 275px;
+        text-align: left;
+    }
+    
+    .inner4,
+    .inner1,
+    .inner2{
+        margin: 0;
+    }
+    .card-list{
+        gap: 15px;
+    }
+
+  
+    .inner3{background-image:url(../images/articles2.jpg) ;
+    
+    width: 400px;}
+    .inner4{background-image:url(../images/articles3.jpg) ;
+    
+    width: 400px;}
+    .inner2{background-image:url(../images/articles4.jpg) ;
+    
+    width: 400px;}
+    .inner1{background-image:url(../images/articles1.jpg) ;
+    
+    width: 400px;}
+
+    .articles-text{
+        margin-left: 100px;
+    }
+
+    .clients-cards-list{
+        flex-wrap: wrap;
+    }
 
 }
 
-@media(min-width:360px){
-    .mobile-nav-list{
+@media(min-width:420px) {
+    .mobile-nav-list {
         display: none;
     }
 }
-    
