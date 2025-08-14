@@ -280,7 +280,7 @@ main {
 
 .sevices-cards-list {
     display: flex;
-    gap: 30px;
+    gap: 27px;
     flex-wrap: wrap;
 }
 
