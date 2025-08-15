@@ -274,7 +274,6 @@ main {
 
 #services {
     padding-bottom: 160px;
-    border-bottom: 1px solid #DADADA;
     padding-top: 87px;
 }
 
@@ -405,7 +404,6 @@ main {
 */
 
 #articles {
-    border-bottom: 1px solid #DADADA;
     padding-bottom: 160px;
 }
 
@@ -477,6 +475,7 @@ main {
 .inner1:focus-visible p {
     background-color: #71A7E2;
     color: #FFFFFF;
+    outline: 0;
 }
 
 .inner1:active,
@@ -498,6 +497,7 @@ main {
 .inner2:focus-visible p {
     background-color: #71A7E2;
     color: #FFFFFF;
+    outline: 0;
 }
 
 .inner2:active,
@@ -520,6 +520,7 @@ main {
 .inner3:focus-visible p {
     background-color: #71A7E2;
     color: #FFFFFF;
+    outline: 0;
 }
 
 .inner3:active,
@@ -542,6 +543,7 @@ main {
 .inner4:focus-visible p {
     background-color: #71A7E2;
     color: #FFFFFF;
+    outline: 0;
 }
 
 .inner4:active,
@@ -649,7 +651,6 @@ ul {
 
 #clients {
     padding-bottom: 160px;
-    border-bottom: 1px solid #DADADA;
 }
 
 .clients-card-info {
@@ -690,7 +691,6 @@ ul {
 
 #contacts {
     height: 480px;
-    border-bottom: 1px solid #DADADA
 }
 
 .clients-foto {
@@ -779,7 +779,7 @@ footer {
     align-items: center;
     justify-content: space-around;
     padding: 45px 0 0 0;
-    border-top: 1px solid #DADADA;
+   
 
 }
 
@@ -856,12 +856,18 @@ footer {
     path {
         fill: #3172B9;
     }
+    outline: 0;
 }
 
 .envelope-icon:active {
+       outline: 0;
+       border: 0;
     path {
         stroke: #3172B9;
+       
     }
+   
+   
 }
 
 .envelope-icon:hover {
@@ -969,6 +975,7 @@ footer {
     color: white;
     width: 230px;
     height: 60px;
+    margin-bottom: 9px;
 
 }
 
@@ -990,6 +997,7 @@ footer {
     font-weight: 400;
     color: #787878;
     font-size: 12px;
+    margin: 0;
 }
 
 .join-us-form {
@@ -1037,6 +1045,24 @@ footer {
     border: 0;
     background-color: #fff;
     padding: 0;
+
+}
+
+.burger-button:hover{
+        color: #fff;
+     path {
+        fill: #71A7E2;
+    }
+
+
+}
+.burger-button:focus-visible {
+    outline-offset: 3px;
+    outline: 1px solid #71A7E2;
+}
+.burger-button:active {
+    background-color: #0E3B6C;
+
 }
 
 .footer-a-list2 {
@@ -1069,13 +1095,14 @@ footer {
   gap: 30px;
 }
 .divider{
-    color: #DADADA;
+  border:  1px solid #DADADA;
 }
 .footer-logo{
     padding-bottom: 30px;
     border-bottom: 1px solid #DADADA;
     width: 100%;
 }
+
 
 
 
@@ -1174,6 +1201,9 @@ footer {
         width: 275px;
         text-align: left;
     }
+    .contacts-cards-list{
+        flex-direction: column;
+    }
 
     .inner4,
     .inner1,
@@ -1256,6 +1286,7 @@ footer {
         width: 100%;
         padding: 20px 100px;
         height: 100%;
+
     }
 
     .join-us-chekbox-text {
