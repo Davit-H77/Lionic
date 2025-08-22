@@ -140,7 +140,6 @@ main {
     font-weight: 300;
     line-height: 130%;
     max-width: 529px;
-    margin-top: 113px;
     margin-bottom: 26px;
 
 }
@@ -176,7 +175,8 @@ main {
     display: flex;
     justify-content: center;
     gap: 10px;
-    width: 134px;
+    width: 250px;
+    height: 60px;
 }
 
 .a-free-buttun:hover {
@@ -779,6 +779,7 @@ footer {
     align-items: center;
     justify-content: space-around;
     padding: 45px 0 0 0;
+    margin-top: 0;
    
 
 }
@@ -827,19 +828,19 @@ footer {
 
 }
 
-/*
+
 .tviter-icon:focus{
-    outline: none;
+    outline: 0;
 
 }
 .in-icon:focus{
-    outline: none;
+    outline: 0;
 }
 
 .envelope-icon:focus{
-    outline: none;
+    outline: 0;
 }
-    */
+    
 
 
 
@@ -909,7 +910,14 @@ footer {
     border: 1px solid #DADADA;
     border-radius: 50px;
     padding: 15px 28px;
+    color: #787878;
 
+}
+#name:not(:placeholder-shown),
+#email:not(:placeholder-shown),
+#tel:not(:placeholder-shown),
+#country:not(:placeholder-shown){
+    border-color: #0E3B6C;
 }
 
 
@@ -1095,7 +1103,9 @@ footer {
   gap: 30px;
 }
 .divider{
-  border:  1px solid #DADADA;
+  border:  0px solid #DADADA;
+  height: 1px;
+  background-color: #DADADA;
 }
 .footer-logo{
     padding-bottom: 30px;
@@ -1112,6 +1122,10 @@ footer {
 
 
 @media(max-width:420px) {
+    body{
+        max-width: 390px;
+        margin: 0 auto;
+    }
     .a-list2 {
         display: none;
     }
