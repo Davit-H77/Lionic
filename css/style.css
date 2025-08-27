@@ -39,6 +39,7 @@ body {
 footer {
     max-width: 1170px;
     margin: 30px auto;
+    margin-top: 0;
 
 }
 
@@ -365,7 +366,7 @@ main {
     font-size: 14px;
     font-weight: 400;
     line-height: 150%;
-    margin: 15px 30px 62px;
+    margin: 29px 30px 62px;
     transition: 2s ease;
     color: rgba(120, 120, 120, 1);
     align-items: center;
@@ -403,6 +404,7 @@ main {
 
 #articles {
     padding-bottom: 160px;
+   
 }
 
 .card-list {
@@ -415,7 +417,9 @@ main {
 
 
 .articles-caption {
-    margin-top: 87px;
+
+ 
+        margin-top: 87px;
     padding: 0;
     margin-bottom: 42px;
 
@@ -778,7 +782,7 @@ footer {
     justify-content: space-around;
     padding: 45px 0 0 0;
     margin-top: 0;
-   
+
 
 }
 
@@ -813,6 +817,7 @@ footer {
     align-items: center;
 }
 
+/*
 .envelope-icon:focus-visible,
 .in-icon:focus-visible,
 .tviter-icon:focus-visible {
@@ -825,22 +830,27 @@ footer {
     outline-offset: 5px;
 
 }
-
-
-.tviter-icon:focus{
-    outline: 0;
-
-}
-.in-icon:focus{
-    outline: 0;
-}
-
-.envelope-icon:focus{
-    outline: 0;
-}
+.linkk:focus-visible{
+      outline: 2px solid #71A7E2;
+    outline-offset: 5px
     
+}
+    */
 
+/*
+.tviter-icon:focus {
+    outline: 0;
 
+}
+
+.in-icon:focus {
+    outline: 0;
+}
+
+.envelope-icon:focus {
+    outline: 0;
+}
+    */
 
 
 .tviter-icon:hover,
@@ -855,18 +865,23 @@ footer {
     path {
         fill: #3172B9;
     }
+
     outline: 0;
 }
 
+
+
+
+
 .envelope-icon:active {
-       outline: 0;
-       border: 0;
+    outline: 0;
+
     path {
         stroke: #3172B9;
-       
+
     }
-   
-   
+
+
 }
 
 .envelope-icon:hover {
@@ -875,6 +890,11 @@ footer {
     path {
         stroke: #71A7E2;
     }
+}
+
+.linkk:focus-visible {
+    outline: 2px solid #71A7E2;
+    outline-offset: 5px;
 }
 
 #join-us {
@@ -911,10 +931,11 @@ footer {
     color: #787878;
 
 }
+
 #name:not(:placeholder-shown),
 #email:not(:placeholder-shown),
 #tel:not(:placeholder-shown),
-#country:not(:placeholder-shown){
+#country:not(:placeholder-shown) {
     border-color: #0E3B6C;
 }
 
@@ -1054,18 +1075,21 @@ footer {
 
 }
 
-.burger-button:hover{
-        color: #fff;
-     path {
+.burger-button:hover {
+    color: #fff;
+
+    path {
         fill: #71A7E2;
     }
 
 
 }
+
 .burger-button:focus-visible {
     outline-offset: 3px;
     outline: 1px solid #71A7E2;
 }
+
 .burger-button:active {
     background-color: #0E3B6C;
 
@@ -1098,17 +1122,27 @@ footer {
 }
 
 .footer-a-list2 {
-  gap: 30px;
+    gap: 30px;
 }
-.divider{
-  border:  0px solid #DADADA;
-  height: 1px;
-  background-color: #DADADA;
+
+.divider {
+    border: 0px solid #DADADA;
+    height: 1px;
+    background-color: #DADADA;
 }
-.footer-logo{
+
+.footer-logo {
     padding-bottom: 30px;
     border-bottom: 1px solid #DADADA;
     width: 100%;
+}
+
+.divider-clients {
+    border: 0px solid #DADADA;
+    height: 1px;
+    background-color: #DADADA;
+    width: 297px;
+    margin: 0 auto
 }
 
 
@@ -1120,10 +1154,14 @@ footer {
 
 
 @media(max-width:420px) {
-    body{
+    body {
         max-width: 390px;
-        margin: 0 auto;
+        margin: 0 15px auto;
     }
+    #home{
+        background-image: none;
+    }
+
     .a-list2 {
         display: none;
     }
@@ -1213,7 +1251,8 @@ footer {
         width: 275px;
         text-align: left;
     }
-    .contacts-cards-list{
+
+    .contacts-cards-list {
         flex-direction: column;
     }
 
@@ -1231,25 +1270,25 @@ footer {
     .inner3 {
         background-image: url(../images/articles2.jpg);
 
-        width: 400px;
+        width: 100%;
     }
 
     .inner4 {
         background-image: url(../images/articles3.jpg);
 
-        width: 400px;
+        width: 100%;
     }
 
     .inner2 {
         background-image: url(../images/articles4.jpg);
 
-        width: 400px;
+        width: 100%;
     }
 
     .inner1 {
         background-image: url(../images/articles1.jpg);
 
-        width: 400px;
+        width: 100%;
     }
 
     .articles-text {
@@ -1305,9 +1344,19 @@ footer {
         width: 364px;
         justify-content: center;
     }
-    .footer-p{
+
+    .footer-p {
         margin: 0 auto;
     }
+    /*
+    main,.footer2{
+        padding-left: 15px;
+    }
+        */
+    .services-p{
+        line-height: 155%;
+    }
+        
 
 
 }
